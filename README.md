@@ -50,33 +50,33 @@ Additionally, calling `getCheckoutTotal()` should return the value of all of the
 ## Function Stubs
 
 ```js
-addItem(itemId, quantity){
+function addItem(itemId, quantity){
     /* Your code here- Look out for adding more items than are in inventory!
 
     */
     return true;
 }
-removeItem(itemId, quantity){
+function removeItem(itemId, quantity){
     /* Your code here- Look out for removing more items than are in the cart!
 
     */
     return true;
 }
-getCheckoutTotal(){
+function getCheckoutTotal(){
     var checkoutTotal = 0.00;
     /* Your code here
 
     */
     return checkOutTotal;
 }
-getCheckoutSubtotal(){
+function getCheckoutSubtotal(){
     var checkoutSubtotal = 0.00;
     /* Your code here
 
     */
     return checkOutSubtotal;
 }
-getTax(subtotal, rate){
+function getTax(subtotal, rate){
     var taxAmount = 0.00;
     /* Your code here
 
@@ -89,7 +89,7 @@ getTax(subtotal, rate){
 
 ```js
 // Inventory
-{
+var inventory = {
     inventory: [{
         id: 1,
         name: "Baseball Bat",
@@ -111,7 +111,7 @@ getTax(subtotal, rate){
 
 ```js
 // Shopping Cart
-{
+var shoppingCart = {
     shoppingCart: [{
         itemId: 1,
         quantity: 0
