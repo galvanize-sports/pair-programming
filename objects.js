@@ -1,4 +1,4 @@
-module.exports.inventory = {
+module.exports = {
     inventory: [{
         id: 1,
         name: "Baseball Bat",
@@ -14,10 +14,7 @@ module.exports.inventory = {
         name: "Running Shoes",
         price: 79.99,
         quantityAvailable: 7
-    }]
-};
-
-module.exports.shoppingCart = {
+    }],
     shoppingCart: [{
         itemId: 1,
         quantity: 0
