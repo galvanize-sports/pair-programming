@@ -19,14 +19,14 @@ module.exports = {
         /* Your code here
 
         */
-        return checkOutTotal;
+        return checkoutTotal;
     },
     getCheckoutSubtotal: function(){
         var checkoutSubtotal = 0.00;
         /* Your code here
 
         */
-        return checkOutSubtotal;
+        return checkoutSubtotal;
     },
     getTax: function(subtotal, rate){
         var taxAmount = 0.00;

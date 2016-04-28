@@ -4,7 +4,7 @@
   "description": "Week 2 javascript assessment",
   "main": "galvanize_sports.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha -w"
   },
   "keywords": [
     "galvanize",
