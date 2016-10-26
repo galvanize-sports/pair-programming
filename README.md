@@ -62,7 +62,6 @@ in `test/test.js`
 ## Hints
 
 * You can add more functions than just the ones that have been stubbed out
-* `this` refers to the base object, and is how you can refer to other properties and methods on the object in `galvanize_sports`
 * To do math with decimals in JavaScript, you need to convert to whole numbers, do the calculation, and then convert back to decimals again
 * You can round numbers with the built-in `Math` object
 * Some solutions are more clever or efficient than others, but any solution that makes the tests pass is acceptable
