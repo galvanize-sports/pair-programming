@@ -2,8 +2,18 @@ var data = require("./objects");
 var inventory = data.inventory;
 var shoppingCart = data.shoppingCart;
 
+function findItemInShoppingCartById(itemId) {
+  //You code here
+}
+
+function findItemInInventoryById(itemId) {
+  //You code here
+}
+
 function addItem(itemId, quantity){
     // Your code here!
+    // Hint: use findItemInShoppingCartById and findItemInInventoryById
+    // to find the items before increasing/decreasing quantities
 }
 
 function removeItem(itemId, quantity){
@@ -36,5 +46,7 @@ module.exports = {
     removeItem,
     getCheckoutTotal,
     getTax,
-    getCheckoutTotal
+    getCheckoutTotal,
+    findItemInShoppingCartById,
+    findItemInInventoryById
 }

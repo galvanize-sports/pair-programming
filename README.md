@@ -49,7 +49,7 @@ Additionally, calling `getCheckoutTotal()` should return the value of all of the
 # NOTE
 
 * The only file you should edit is `galvanize_sports.js`. You should refer to `objects.js` to understand the format of the data.
-* * The inventory is available as `inventory`, and the shopping cart is available as `shoppingCart` in `galvanize_sports.js`
+* The inventory is available as `inventory`, and the shopping cart is available as `shoppingCart` in `galvanize_sports.js`
 
 ## Getting Started
 
@@ -78,3 +78,5 @@ in `test/test.js`
     * `galvanizeSports.addItem(1, 1);`
     * `galvanizeSports.getCheckoutTotal();`
 * Enjoy!
+
+![](http://i.imgur.com/FdLbc1m.gif)
