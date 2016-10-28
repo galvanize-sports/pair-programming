@@ -44,7 +44,7 @@ module.exports = {
     shoppingCart,
     addItem,
     removeItem,
-    getCheckoutTotal,
+    getCheckoutSubtotal,
     getTax,
     getCheckoutTotal,
     findItemInShoppingCartById,
