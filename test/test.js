@@ -40,7 +40,7 @@ describe("Functions should work", function() {
       galvanizeSports.addItem(18, 1);
       assert.equal(galvanizeSports.inventory[2].quantityAvailable, 6, "Item 3 should be removed from the available inventory");
     });
-    xit("when requested quantity is greater than available inventory, remaining inventory is added to cart", function () {
+    it("when requested quantity is greater than available inventory, remaining inventory is added to cart", function () {
       initializeData();
       galvanizeSports.addItem(10, 50);
       assert.equal(galvanizeSports.shoppingCart[0].quantity, 5, "All available item 1's should be added to the shopping cart");
@@ -48,7 +48,7 @@ describe("Functions should work", function() {
     });
   });
   describe("#removeItem", function () {
-    xit('should remove items from the cart', function () {
+    it('should remove items from the cart', function () {
       initializeData();
       galvanizeSports.removeItem(10, 1);
       assert.equal(galvanizeSports.shoppingCart[0].quantity, 1, "Item 1 should be removed from the shopping cart");
@@ -62,7 +62,7 @@ describe("Functions should work", function() {
       assert.equal(galvanizeSports.shoppingCart[2].quantity, 1, "Items 3 should be removed from the shopping cart");
       assert.equal(galvanizeSports.inventory[2].quantityAvailable, 8, "Item 3 should be added to the available inventory");
     });
-    xit("number of items removed from cart does not exceed the quantity of items actually in the cart", function () {
+    it("number of items removed from cart does not exceed the quantity of items actually in the cart", function () {
       galvanizeSports.removeItem(10, 50);
       assert.equal(galvanizeSports.shoppingCart[0].quantity, 0, "All available item 1's should be removed from the shopping cart");
       assert.equal(galvanizeSports.inventory[0].quantityAvailable, 5, "All available item 1's should be added to the available inventory")
