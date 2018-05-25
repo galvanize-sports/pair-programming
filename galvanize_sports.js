@@ -3,11 +3,16 @@ var inventory = data.inventory;
 var shoppingCart = data.shoppingCart;
 
 function findItemInShoppingCartById(itemId) {
-  //You code here
+    for (var i = 0; i < data.shoppingCart.length; i++) {
+        var itemID = data.shoppingCart[i].itemId
+        if (itemID === itemId) {
+            return data.shoppingCart[i]
+        }
+    }
 }
 
 function findItemInInventoryById(itemId) {
-  //You code here
+    
 }
 
 function addItem(itemId, quantity){
