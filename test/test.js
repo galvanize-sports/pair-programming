@@ -31,7 +31,7 @@ describe("Functions should work", function() {
       galvanizeSports.addItem(18, 1);
       assert.equal(galvanizeSports.shoppingCart[2].quantity, 3, "Items 3 should be added to the shopping cart");
     });
-    xit("updates the inventory", function () {
+    it("updates the inventory", function () {
       initializeData();
       galvanizeSports.addItem(10, 1);
       assert.equal(galvanizeSports.inventory[0].quantityAvailable, 2, "Item 1 should be removed from the available inventory");
