@@ -17,7 +17,7 @@ describe("Functions should work", function() {
       assert.equal(galvanizeSports.findItemInShoppingCartById(15), galvanizeSports.shoppingCart[1], "Should find item 15 in shopping cart");
       assert.equal(galvanizeSports.findItemInShoppingCartById(18), galvanizeSports.shoppingCart[2], "Should find item 18 in shopping cart");
     });
-    xit("finds an item in the inventory by id", function () {
+    it("finds an item in the inventory by id", function () {
       assert.equal(galvanizeSports.findItemInInventoryById(10), galvanizeSports.inventory[0], "Should find item 10 in inventory");
       assert.equal(galvanizeSports.findItemInInventoryById(15), galvanizeSports.inventory[1], "Should find item 15 in inventory");
       assert.equal(galvanizeSports.findItemInInventoryById(18), galvanizeSports.inventory[2], "Should find item 18 in inventory");

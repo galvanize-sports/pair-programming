@@ -12,7 +12,12 @@ function findItemInShoppingCartById(itemId) {
 }
 
 function findItemInInventoryById(itemId) {
-    
+  for (var i = 0; i < data.inventory.length; i++) {
+      var itemID = data.inventory[i].id;
+      if (itemID === itemId) {
+          return data.inventory[i];
+      }
+  }  
 }
 
 function addItem(itemId, quantity){
