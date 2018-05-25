@@ -39,7 +39,13 @@ function addItem(itemId, quantity){
     // to find the items before increasing/decreasing quantities
 
 function removeItem(itemId, quantity){
-    // Your code here!
+    var foundInShoppingCart = findItemInShoppingCartById(itemId);
+        if (quantity > foundInShoppingCart.quantity) {
+            quantity = foundInShoppingCart.quantity;
+    } 
+    foundInShoppingCart.quantity = (foundInShoppingCart.quantity - quantity); 
+    var foundItem = findItemInInventoryById(itemId);   
+    foundItem.quantityAvailable = (foundItem.quantityAvailable + quantity);  
 }
 
 function getCheckoutSubtotal(){
