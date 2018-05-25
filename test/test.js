@@ -22,7 +22,7 @@ describe("Functions should work", function() {
       assert.equal(galvanizeSports.findItemInInventoryById(15), galvanizeSports.inventory[1], "Should find item 15 in inventory");
       assert.equal(galvanizeSports.findItemInInventoryById(18), galvanizeSports.inventory[2], "Should find item 18 in inventory");
     });
-    xit("adds an item to the shopping cart", function () {
+    it("adds an item to the shopping cart", function () {
       initializeData();
       galvanizeSports.addItem(10, 1);
       assert.equal(galvanizeSports.shoppingCart[0].quantity, 3, "Item 1 should be added to the shopping cart");
