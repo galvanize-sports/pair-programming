@@ -69,7 +69,7 @@ describe("Functions should work", function() {
     })
   });
   describe("#getCheckoutSubtotal", function () {
-    xit("Calculates the subtotal", function(){
+    it("Calculates the subtotal", function(){
       initializeData();
       assert.equal(galvanizeSports.getCheckoutSubtotal(), 299.96, "Calculates correct subtotal");
     });

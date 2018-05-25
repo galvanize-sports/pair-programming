@@ -49,10 +49,29 @@ function removeItem(itemId, quantity){
 }
 
 function getCheckoutSubtotal(){
-    var checkoutSubtotal = 0.00;
-    // Your code here!
+    checkoutSubtotal = (shoppingCart[0].quantity * inventory[0].price) + (shoppingCart[1].quantity * inventory[1].price) + (shoppingCart[2].quantity * inventory[2].price);
     return checkoutSubtotal;
-}
+}   
+    
+    
+    
+    
+/*
+    var checkoutSubtotal = 0.00;
+    for (var i = 0; i < shoppingCart.length; i++) {
+        if (shoppingCart[i].quantity !== 0) {
+            var quantityOfItem = shoppingCart[i].quantity;
+            var idOfItem = shoppingCart[i].itemId;
+            for (var j = 0; inventory.length; j++) {
+                if (inventory[j].id === idOfItem) {
+                    var priceOfItem = inventory[j].price;
+                }
+            }
+        checkoutSubtotal = checkoutSubtotal + (quantityOfItem * priceOfItem);
+    }
+    return checkoutSubtotal;
+*/
+
 
 function getTax(subtotal, rate){
     var tax = 0.00;
