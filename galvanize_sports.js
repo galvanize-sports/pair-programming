@@ -16,7 +16,11 @@ function findItemInInventoryById(itemId) {
         var itemID = data.inventory[i].id;
         if (itemID === itemId) {
             return data.inventory[i];
+<<<<<<< HEAD
+        }
+=======
         } 
+>>>>>>> 207731a1740dcb7c0c3ec687365d3ce183dcaa40
     }  
 }
 
@@ -28,7 +32,22 @@ function addItem(itemId, quantity){
     foundItem.quantityAvailable = (foundItem.quantityAvailable - quantity);
     var foundInShoppingCart = findItemInShoppingCartById(itemId);
     foundInShoppingCart.quantity = (foundInShoppingCart.quantity + quantity); 
+<<<<<<< HEAD
     }
+=======
+}
+    //        if (findItemInShoppingCartById (itemId))
+//    var foundInShoppingCart = findItemInShoppingCartById (itemId);
+
+    // Your code here!
+    // Hint: use findItemInShoppingCartById and findItemInInventoryById
+    // to find the items before increasing/decreasing quantities
+
+<<<<<<< HEAD
+}
+=======
+>>>>>>> 207731a1740dcb7c0c3ec687365d3ce183dcaa40
+>>>>>>> 452f39b499e7cad87e6cbc37d6384f7cf7b248d0
 
 function removeItem(itemId, quantity){
     // Your code here!
